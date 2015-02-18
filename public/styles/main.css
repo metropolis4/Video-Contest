@@ -1,0 +1,13 @@
+#submitNew,
+#viewEntries {
+    margin-top: 5%;
+    margin-right: 1%;
+}
+.pic {
+    height: 410px;
+    overflow: hidden;
+}
+#myModal {
+    width: 50%;
+    height: 40%;
+}

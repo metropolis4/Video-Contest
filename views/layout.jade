@@ -1,0 +1,22 @@
+doctype html
+html(lang='en')
+    head
+        meta(charset="utf-8")
+        title Contest App
+        include partials/header-includes
+
+    body
+        nav.navbar.navbar-default#main-nav
+            .container
+                .navbar-header 
+                    a.navbar-brand(href="/") AirGuitar Video Contest
+                ul.nav.navbar-nav.navbar-right
+                    li#new-entry
+                        a(href="/new-entry") Submit New Entry
+                    li
+                        a(href="/view-submissions") View Entries
+        
+        block content
+
+        include partials/footer-includes
+        

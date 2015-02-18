@@ -1,0 +1,12 @@
+extends layout
+
+block content
+    .container
+        .row
+            -entries.map(function(val){
+                div.col-md-3.entry
+                    h2 #{val.name}
+                    iframe(src="#{val.url}", width="80%", height="200", frameborder="0")
+                    h3 #{val.title}
+                    p #{val.desc}
+            -})

@@ -1,0 +1,16 @@
+extends layout
+
+block content
+    .container
+        form(action="/formdata", method="post", class="newVideo")
+            .form-group
+                input(type="text", name="name", class="form-control", placeholder="Name")
+            .form-group
+                input(type="text", name="url", class="form-control", placeholder="Video Link")
+            .form-group
+                input(type="text", name="title", class="form-control", placeholder="Video Title")
+            .form-group
+                input(type="text", name="desc", class="form-control", placeholder="Video Description")
+            .form-group
+                button(type="submit", value ="submit", class="btn btn-default") Submit
+                button(type="button", name="cancel", class="btn btn-default") Cancel
